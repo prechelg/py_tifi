@@ -1,0 +1,51 @@
+# =============================================================================
+# Fast Ion Tomography - Python Requirements
+# =============================================================================
+# Install with: pip install -r requirements.txt
+#
+# For GPU-accelerated solvers, see optional dependencies below.
+
+# -----------------------------------------------------------------------------
+# Core Dependencies (required)
+# -----------------------------------------------------------------------------
+numpy>=1.20.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+cvxpy>=1.3.0
+
+# -----------------------------------------------------------------------------
+# Parallel Processing (recommended)
+# -----------------------------------------------------------------------------
+joblib>=1.0.0
+
+# -----------------------------------------------------------------------------
+# Optional: JAX Solvers (GPU-accelerated gradient descent)
+# -----------------------------------------------------------------------------
+# Uncomment for JAX solver support (jax_solver.py, jax_solver_vmap.py)
+# For CPU-only:
+#   pip install jax jaxlib optax
+# For GPU (CUDA):
+#   pip install jax[cuda12] optax
+#
+# jax>=0.4.0
+# jaxlib>=0.4.0
+# optax>=0.1.5
+
+# -----------------------------------------------------------------------------
+# Optional: Clarabel Solver (Rust-based interior point)
+# -----------------------------------------------------------------------------
+# Uncomment for Clarabel solver support (clarabel_solver.py)
+# Fast, numerically stable Rust implementation
+#
+# clarabel>=0.6.0
+
+# -----------------------------------------------------------------------------
+# Optional: SCS GPU Solver (GPU-accelerated conic solver)
+# -----------------------------------------------------------------------------
+# Uncomment for SCS GPU support (cvxpyscs_solver.py)
+# For CPU-only:
+#   pip install scs
+# For GPU (CUDA):
+#   pip install scs[gpu]
+#
+# scs>=3.0.0
