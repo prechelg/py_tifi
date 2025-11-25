@@ -1,0 +1,23 @@
+# Data files (large numpy arrays)
+*.npy
+*.npz
+
+# Markdown documentation
+*.md
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Generated images
+*.png
+
+# Log files
+*.log
+
+# Old/archive directories
+Garrett_11-23-2024/
